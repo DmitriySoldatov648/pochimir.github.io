@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header >
+        <div class="header-flex">
+            <a href="index.html"><img src="./image/logo1.svg"  alt="logo" style="width: 187px; height: 60px;"></a>
+            <div class="header-center">
+                <div class="linev"></div>
+                <p class="nav"><a href="index.html">все услуги</a></p>
+                <p class="nav"><a href="./aboutUs.html">о нас</a></p>
+                <p class="nav"><a href="contacts.html">контакты</a></p>
+                <div class="linev"></div>
+            </div>
+            <div class="header-end">
+                <p onclick="openPopup()" id="city">Екатеринбург</p>
+                <img src="./image/point.svg" alt="point" style="width: 26px; height: 26px; padding-left: 5px; margin-top: 12px;">
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="about-us">
+            <div class="block4-right">
+                <div class="a1"></div>
+                <div class="a2"></div>
+                <div class="a3"></div>
+                <div class="a4"></div>
+                <div class="a5"></div>
+                <div class="a6"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-content-left">
+                    <div class="ab1">
+                        <h1 class="ab1h">Наша команда</h1>
+                        <p class="ab1p">
+                            Наш фундамент — команда высокого класса. Мы объединены общей̆ 
+                            страстью к созданию работоспособностью вашей техники
+                        </p>
+                    </div>
+
+                    <div class="line-ab"></div>
+
+                    <div class="ab2">
+                        <h3 class="ab2h">Качество и надежность:</h3>
+                        <p class="ab2p">
+                            Мы используем только сертифицированные запчасти и
+                            проверенные методы ремонта, чтобы обеспечить долгосрочную работу вашей техники.
+                        </p>
+                    </div>
+
+                    <div class="line-ab"></div>
+                    
+                    <div class="ab3">
+                        <p class="ab3p">
+                            <h3 class="ab3h">Удобство и доступность: </h3>
+                            Мы стремимся сделать процесс обслуживания
+                            и ремонта максимально удобным для вас, предлагая гибкие 
+                            графики работы и оперативное обслуживание.
+                        </p>
+                    </div>
+
+                    <div class="line-ab"></div>
+                    <img src="./image/logo1.svg" alt="" class="logo-ab">
+                </div>
+
+
+
+                <div class="about-content-right">
+                    <div class="line-ab" style="margin-top: 50px;"></div>
+                    <div class="bb2">
+                        <div class="we">Мы</div>
+                        <div class="we1"> — команда профессионалов, преданная идеалу 
+                        обеспечить безупречную работу вашей бытовой техники. С 10-летним опытом
+                        в сфере ремонта, мы ставим перед собой задачу сделать вашу жизнь проще,
+                        обеспечивая качественное обслуживание и ремонт любых видов техники.</div>
+                    </div>
+
+                    <div class="line-ab"></div>
+
+                    <div class="bb3">
+                        <div class="mis">Наша миссия</div>
+                        <div class="mis1">
+                            - не просто восстановить функциональность вашей техники,
+                            но и создать надежные и долгосрочные решения для вашего комфорта
+                            и уверенности в качестве обслуживания.
+                        </div>
+                    </div>
+
+                    <div class="line-ab"></div>
+                    
+                    <div class="bb4">
+                        <div class="pon1">
+                            Мы понимаем, что каждое оборудование уникально,
+                            поэтому мы предлагаем персонализированные 
+                            решения под ваши конкретные потребности.
+                        </div>
+                    </div>
+
+                    <div class="line-ab"></div>
+                    <button class="send-us" onclick="showPopup()">Оставить заявку</button>
+
+                    <img src="./image/logo1.svg" alt="" class="logo-bb">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer> 
+        <div class="background-footer-bb"></div>
+        <div class="footer-content-bb">
+            <div class="f1-bb">
+                <p>© 2015 — 2024. Pochimir</p>
+                <p><u>Пользовательское соглашение</u></p>
+                <p><u>Политика конфиденциальности</u></p>
+            </div>
+            <div class="f2-bb">
+                <img src="./image/VK.png" alt="VK" class="img4" >
+                <img src="./image/YouTube.png" alt="YouTube" class="imgf4">
+                <img src="./image/Inst.png" alt="Inst" class="img4">
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div id="popup-overlay">
+        <div id="popup">
+          <div class="popup1">
+           
+            
+            <div class="popup-content">
+                <button onclick="hidePopup()" class="btn-popup"><img src="./image/crest.svg" alt=""></button>
+                <h1 class="popuph">Что нужно сделать?</h1>
+                <input type="text" class="problem" placeholder="Короткое название проблемы">
+                <input type="text" class="details" placeholder="Опишите проблему подробнее...">
+            </div>
+            <div class="popup-geo">
+                <div class="adress">
+                    <h4 class="adrh">Адрес</h4>
+                    <input type="text" class="input-adr">
+                </div>
+                <div class="popup-contacts">
+                    <h4 class="adrh">Ваши контакты</h4>
+                    <input type="text" class="input-adr">
+                </div>
+            </div>
+            <div class="selects">
+                <select name="Бюджет" id="1" class="selection">
+                    <option value="0" selected disabled>Бюджет</option>
+                    <option value="5000">до 5000</option>
+                    <option value="10000">до 10000</option>
+                    <option value="full">не ограничено</option>
+                </select>
+                <select name="" id="2" class="selection">
+                    <option value="0" selected disabled>Сроки</option>
+                    <option value="">Срочно</option>
+                    <option value="">могу подождать</option>
+                    <option value="">в определённое время</option>
+                </select>
+                <select name="" id="3" class="selection s3">
+                    <option value="0" selected disabled>Фото и файлы</option>
+                    <option value="">+</option>
+                    <option value="">+</option>
+                    <option value="">+</option>
+                </select>
+            </div>
+            <button class="send" onclick="send()">Опубликовать</button>
+          </div>
+        </div>
+    </div>
+
+
+
+ 
+    <div id="popup-point">
+        <div id="popup-p">
+          <div class="popup2">
+            <div class="popup-content-point">
+                <button onclick="closePopup()" class="btn-popup-point"><img src="./image/crest.svg" alt=""></button>
+                <h3 class="choice">Выбор города</h3>
+                <div class="cityes" id="cityes">
+                    <div class="city" id="msc">Москва</div>
+                    <div class="city" id="spb">Санкт-Петербург</div>
+                    <div class="city" id="ekb">Екатеринбург</div>
+                </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+    </div>
+
+<script src="./index.js"></script>
+</body>
+</html>
